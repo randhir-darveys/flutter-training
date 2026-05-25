@@ -9,6 +9,8 @@ import '../mini_projects/shopping_cart/screens/shopping_cart_screen.dart';
 import '../mini_projects/users_api/screens/users_api_screen.dart';
 import '../mini_projects/product_api/screens/product_api_screen.dart';
 import '../mini_projects/shared_prefs/screens/shared_prefs_check_screen.dart';
+import '../mini_projects/hive_todo/screens/hive_todo_screen.dart';
+import '../mini_projects/sqflite_notes/screens/notes_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -24,6 +26,8 @@ class HomeScreen extends StatelessWidget {
     'Users List API App',
     'Product Listing API App',
     'SharedPreferences Login',
+    'Hive Todo App',
+    'sqflite Notes App',
   ];
 
   void openProject(BuildContext context, int index) {
@@ -95,6 +99,20 @@ class HomeScreen extends StatelessWidget {
         context,
         MaterialPageRoute(
           builder: (context) => const SharedPrefsCheckScreen(),
+        ),
+      );
+    } else if (index == 10) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const HiveTodoScreen(),
+        ),
+      );
+    } else if (index == 11) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const NotesScreen(),
         ),
       );
     }
