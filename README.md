@@ -257,6 +257,7 @@ Custom wave header UI using Canvas and Path.
 - drawPath()
 - shouldRepaint()
 
+---
 ## 🛠 Tech Stack
 
 - Flutter
