@@ -320,7 +320,7 @@ git clone https://github.com/randhir-darveys/flutter-training.git
 ### 2. Move to Project Folder
 
 ```bash
-cd flutter_mini_projects
+cd flutter-training
 ```
 
 ### 3. Install Dependencies
