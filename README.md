@@ -197,6 +197,66 @@ A complete notes CRUD application.
 
 ---
 
+### 13. AnimatedContainer Demo
+Smooth card animation using AnimatedContainer.
+
+**Concepts Covered:**
+- Implicit animation
+- AnimatedContainer
+- Duration
+- Curve
+- setState based animation
+
+---
+
+### 14. Hero Animation Demo
+Shared element transition between two screens.
+
+**Concepts Covered:**
+- Hero widget
+- Shared animation tag
+- Navigation transition
+- Profile detail animation
+
+---
+
+### 15. AnimationController Demo
+Manual animation control using AnimationController.
+
+**Concepts Covered:**
+- AnimationController
+- Tween
+- CurvedAnimation
+- FadeTransition
+- ScaleTransition
+- forward()
+- reverse()
+- dispose()
+
+---
+
+### 16. Lottie Animation Demo
+JSON-based animation using Lottie package.
+
+**Concepts Covered:**
+- Lottie package
+- Lottie.network
+- Play / Pause animation
+- AnimationController
+
+---
+
+### 17. CustomPainter Demo
+Custom wave header UI using Canvas and Path.
+
+**Concepts Covered:**
+- CustomPainter
+- Canvas
+- Paint
+- Path
+- drawPath()
+- shouldRepaint()
+
 ## 🛠 Tech Stack
 
 - Flutter
@@ -223,6 +283,7 @@ flutter pub add hive
 flutter pub add hive_flutter
 flutter pub add sqflite
 flutter pub add path
+flutter pub add lottie
 ```
 
 Or install all dependencies:

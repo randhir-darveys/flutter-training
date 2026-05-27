@@ -11,6 +11,11 @@ import '../mini_projects/product_api/screens/product_api_screen.dart';
 import '../mini_projects/shared_prefs/screens/shared_prefs_check_screen.dart';
 import '../mini_projects/hive_todo/screens/hive_todo_screen.dart';
 import '../mini_projects/sqflite_notes/screens/notes_screen.dart';
+import '../mini_projects/animations/screens/animated_container_screen.dart';
+import '../mini_projects/animations/screens/hero_animation_screen.dart';
+import '../mini_projects/animations/screens/animation_controller_screen.dart';
+import '../mini_projects/animations/screens/lottie_animation_screen.dart';
+import '../mini_projects/animations/screens/custom_painter_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,6 +33,11 @@ class HomeScreen extends StatelessWidget {
     'SharedPreferences Login',
     'Hive Todo App',
     'sqflite Notes App',
+    'AnimatedContainer Demo',
+    'Hero Animation Demo',
+    'AnimationController Demo',
+    'Lottie Animation Demo',
+    'CustomPainter Demo',
   ];
 
   void openProject(BuildContext context, int index) {
@@ -113,6 +123,41 @@ class HomeScreen extends StatelessWidget {
         context,
         MaterialPageRoute(
           builder: (context) => const NotesScreen(),
+        ),
+      );
+    } else if (index == 12) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const AnimatedContainerScreen(),
+        ),
+      );
+    } else if (index == 13) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const HeroAnimationScreen(),
+        ),
+      );
+    } else if (index == 14) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const AnimationControllerScreen(),
+        ),
+      );
+    } else if (index == 15) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const LottieAnimationScreen(),
+        ),
+      );
+    } else if (index == 16) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const CustomPainterScreen(),
         ),
       );
     }
